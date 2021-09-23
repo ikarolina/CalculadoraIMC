@@ -1,0 +1,27 @@
+.tela {
+    width: 895px;
+    height: 515px;
+    background: #fff;
+    position: absolute;
+    top: 45px;
+    left: 55px;
+    overflow-y: auto;
+    font-size: 14px;
+    padding: 10px 0px;
+}
+
+.imc {
+    text-align: center;
+    border: 10px solid;
+}
+
+.resultado {
+    background-color: white;
+    text-align: center;
+    border: 10px solid;
+    border-color: yellow;
+    width: 250px;
+    height: 300px;
+    line-height: 250px;
+}
+
