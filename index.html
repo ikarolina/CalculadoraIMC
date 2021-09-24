@@ -1,28 +1,38 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-<form class="form" id="form">
-    <div class="tela">
-        <div class="IMC">
-            <h1>Calculadora - IMC</h1>
-            <hr />
-            <div>
-                <label>Nome:</label>
-                <input id="nome">
+
+<div class="div-principal">
+    <div class="div-imc">
+        <form class="form" id="form">
+            <div class="tela">
+                <div class="IMC">
+                    <span class="titulo">
+                        Calculadora - IMC
+                        </span>
+                    <div>
+                        <input id="nome" placeholder="Nome">
+                    </div>
+    
+                    <div>
+                        <input id="altura" placeholder="altura">
+                    </div>
+    
+                    <div>
+                        <input id="kilos" placeholder="peso">
+                    </div>
+    
+                    <div>
+                            <input placeholder="imc" disabled="disabled" name="imc" id="imc"/>
+                    </div>
+
+                    <div class="div-button">
+                        <button id="btnCalcular" onclick="Calcular()">Calcular</button>
+                    </div>
+                   
+                    <div class="resultado">
+                    </div>
+                </div>
             </div>
-            <div>
-                <label>Altura:</label>
-                <input id="altura">
-            </div>
-            <div>
-                <label>Peso:</label>
-                <input id="kilos">
-            </div>
-            <label for="imc">IMC
-                <input disabled="disabled" name="imc" id="imc" />
-            </label>
-            <button id="btnCalcular" onclick="Calcular()">Calcular</button>
-            <div class="resultado">
-            </div>
-        </div>
+        </form>
     </div>
-</form>
+</div>
 <script type="text/javascript" src="imc.js"></script>
