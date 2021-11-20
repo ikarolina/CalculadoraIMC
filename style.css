@@ -1,4 +1,7 @@
-
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    }
 .div-principal{
     width: 100%;
     min-height: 100vh;
@@ -109,3 +112,12 @@ input
     margin-bottom: 25px;
 }
 
+.message-sucess{
+    background: #4caf50;
+}
+.message-warning{
+    background: #ffc107;
+}
+.message-alert{
+    background: #e03b07;
+}

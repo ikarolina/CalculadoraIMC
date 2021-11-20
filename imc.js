@@ -45,22 +45,23 @@ function verificarIMC(imc) {
     } else if (imc >= 30 && imc <= 34.99) {
         createMessage("Obesidade I", "alert")
     } else {
-        createMessage("Obesidade II", "danger")
+        createMessage("Obesidade II", "alert")
     }
 }
 
 function createMessage(msg, type) {
     document
-        .querySelector("body")
-        .insertAdjacentHTML("beforebegin", `<div class='message ${type}'>${msg}</div>`);
+        .querySelector(".resultado")
+        .insertAdjacentHTML("beforebegin", `<div class='message-${type}'>${msg}</div>`);
 
     setTimeout(function () {
-        deleteMessage();
+        deleteMessage(type);
+        //console.log('.message');
     }, 3000);
 }
 
-function deleteMessage() {
-    const list = document.querySelectorAll(".message");
+function deleteMessage(type) {
+    const list = document.querySelectorAll('.message-'+type);
     for (const item of list) {
         item.remove();
     }
